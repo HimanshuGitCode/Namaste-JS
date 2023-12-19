@@ -45,31 +45,31 @@
 
 //> optimize code for area,diameter and radius
 
-const radius = [3,1,2,4];
+// const radius = [3,1,2,4];
 
-const area = function(radius){
-  return Math.PI * radius * radius;
-};
+// const area = function(radius){
+//   return Math.PI * radius * radius;
+// };
 
-const cicumference  = function (radius){
-  return 2 * Math.PI * radius;
-};
+// const cicumference  = function (radius){
+//   return 2 * Math.PI * radius;
+// };
 
-const diameter = function(radius){
-  return 2 * radius;
-};
+// const diameter = function(radius){
+//   return 2 * radius;
+// };
 
-const calcualte = function(radius,logic){
-  const output = [];
-  for(let i = 0;i<radius.lenghth; i++){
-    output.push(logic(radius[i]));
-  }
-  return output;
-}
+// const calcualte = function(radius,logic){
+//   const output = [];
+//   for(let i = 0;i<radius.lenghth; i++){
+//     output.push(logic(radius[i]));
+//   }
+//   return output;
+// }
 
-console.log(calcualte(radius,area));
+// console.log(calcualte(radius,area));
 
-console.log(calcualte(radius,cicumference));
+// console.log(calcualte(radius,cicumference));
 
-console.log(calcualte(radius,diameter));
+// console.log(calcualte(radius,diameter));
 
