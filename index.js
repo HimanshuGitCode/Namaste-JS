@@ -31,14 +31,45 @@
 
 // Higher order fucntion for calcualte area of circle
 
+// const radius = [3,1,2,4];
+
+// const calcualteArea = function(radius){
+//   const output = [];
+//   for(let i = 0;i<radius.lenght; i++){
+//     output.push(Math.PI * radius[i] * radius[i]);
+//   }
+//   return output;
+// };
+
+// console.log(calcualteArea(radius));
+
+//> optimize code for area,diameter and radius
+
 const radius = [3,1,2,4];
 
-const calcualteArea = function(radius){
-  const output = [];
-  for(let i = 0;i<radius.lenght; i++){
-    output.push(Math.PI * radius[i] * radius[i]);
-  }
-  return output;
+const area = function(radius){
+  return Math.PI * radius * radius;
 };
 
-console.log(calcualteArea(radius));
+const cicumference  = function (radius){
+  return 2 * Math.PI * radius;
+};
+
+const diameter = function(radius){
+  return 2 * radius;
+};
+
+const calcualte = function(radius,logic){
+  const output = [];
+  for(let i = 0;i<radius.lenghth; i++){
+    output.push(logic(radius[i]));
+  }
+  return output;
+}
+
+console.log(calcualte(radius,area));
+
+console.log(calcualte(radius,cicumference));
+
+console.log(calcualte(radius,diameter));
+
